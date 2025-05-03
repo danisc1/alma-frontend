@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ALMA - Área do Psicólogo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>ALMA</h1>
+    <p>Área do Psicólogo</p>
+    <nav>
+      <a href="login.html">Sair</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="filtro-paciente">
+      <h2>Escolha um paciente</h2>
+      <select id="paciente" onchange="exibirRegistros()">
+        <option value="">Selecione</option>
+        <option value="1">Paciente 1</option>
+        <option value="2">Paciente 2</option>
+        <!-- Adicione mais pacientes conforme necessário -->
+      </select>
+    </section>
+
+    <section id="historico">
+      <h2>Registros de Humor</h2>
+      <ul id="lista-registros"></ul>
+    </section>
+
+    <section id="grafico">
+      <h2>Evolução do Humor</h2>
+      <canvas id="graficoHumor"></canvas>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

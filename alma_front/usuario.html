@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALMA - Área do Usuário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="area-usuario.html">Área do Usuário</a></li>
+                <li><a href="login.html">Sair</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Área do Usuário</h2>
+
+            <div id="info-usuario">
+                <h3>Bem-vindo, <span id="nome-usuario">Usuário</span></h3>
+                <p>Aqui você pode ver seu humor registrado ao longo do tempo e acessar suas observações.</p>
+            </div>
+
+            <form id="form-registro">
+                <h3>Registrar Novo Humor</h3>
+                <label for="nota">Nota de humor (1 a 5):</label>
+                <input type="number" id="nota" min="1" max="5" required>
+                <label for="obs">Observações:</label>
+                <textarea id="obs" rows="4" required></textarea>
+                <button type="submit" class="btn">Registrar Humor</button>
+            </form>
+
+            <div id="grafico-container">
+                <h3>Gráfico de Humor</h3>
+                <canvas id="graficoHumor"></canvas>
+            </div>
+
+            <h3>Registros Recentes</h3>
+            <ul id="lista-registros"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ALMA - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
